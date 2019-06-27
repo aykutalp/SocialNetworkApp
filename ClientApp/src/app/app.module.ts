@@ -8,8 +8,11 @@ import { ValueComponent } from './value/value.component';
 import { NavComponent } from './nav/nav.component';
 
 import { AuthService } from './services/auth.service';
+import { ErrorInterceptorProvider } from './services/error.interceptor';
+
 import { HomeComponent } from './home/home.component';
 import { RegisterComponent } from './register/register.component';
+
 
 @NgModule({
    declarations: [
@@ -25,7 +28,8 @@ import { RegisterComponent } from './register/register.component';
       FormsModule
    ],
    providers: [
-      AuthService
+      AuthService,
+      ErrorInterceptorProvider
    ],
    bootstrap: [
       AppComponent

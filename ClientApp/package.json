@@ -23,6 +23,7 @@
     "@auth0/angular-jwt": "^3.0.0",
     "alertifyjs": "^1.11.4",
     "core-js": "^2.5.4",
+    "ngx-bootstrap": "^5.1.1",
     "rxjs": "^6.0.0",
     "zone.js": "^0.8.26"
   },

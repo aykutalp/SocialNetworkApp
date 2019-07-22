@@ -2,7 +2,7 @@ import { Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { FriendsComponent } from './friends/friends.component';
 import { MessagesComponent } from './messages/messages.component';
-import { ListsComponent } from './lists/lists.component';
+import { ListsComponent } from './members/lists/lists.component';
 import { AuthGuard } from './_guards/auth.guard';
 
 export const appRoutes: Routes = [

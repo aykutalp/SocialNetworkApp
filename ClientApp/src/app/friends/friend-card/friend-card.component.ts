@@ -2,11 +2,11 @@ import { Component, OnInit, Input } from '@angular/core';
 import { User } from 'src/app/_models/user';
 
 @Component({
-  selector: 'app-card',
-  templateUrl: './card.component.html',
-  styleUrls: ['./card.component.css']
+  selector: 'app-friend-card',
+  templateUrl: './friend-card.component.html',
+  styleUrls: ['./friend-card.component.css']
 })
-export class CardComponent implements OnInit {
+export class FriendCardComponent implements OnInit {
   @Input() user: User;
 
   constructor() { }

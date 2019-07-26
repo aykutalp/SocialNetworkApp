@@ -4,11 +4,11 @@ import { UserService } from 'src/app/services/user.service';
 import { AlertifyService } from 'src/app/services/alertify.service';
 
 @Component({
-  selector: 'app-lists',
-  templateUrl: './lists.component.html',
-  styleUrls: ['./lists.component.css']
+  selector: 'app-friend-list',
+  templateUrl: './friend-list.component.html',
+  styleUrls: ['./friend-list.component.css']
 })
-export class ListsComponent implements OnInit {
+export class FriendListComponent implements OnInit {
 
   users: User[];
   

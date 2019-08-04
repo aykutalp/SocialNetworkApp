@@ -1,8 +1,8 @@
 using System;
 
-namespace SocialNetworkApp.API.Models
+namespace SocialNetworkApp.API.DTOs
 {
-    public class Photo
+    public class PhotoForReturnDto
     {
         public int Id { get; set; }
         public string Url { get; set; }
@@ -10,8 +10,5 @@ namespace SocialNetworkApp.API.Models
         public DateTime DateAdded { get; set; }
         public bool isMain { get; set; }
         public string PublicId { get; set; }
-        public User User { get; set; }
-        public int UserId { get; set; }
-    
     }
 }

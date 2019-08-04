@@ -6,6 +6,7 @@ import { BsDropdownModule, TabsModule } from 'ngx-bootstrap';
 import { RouterModule } from '@angular/router';
 import { JwtModule } from '@auth0/angular-jwt';
 import { NgxGalleryModule } from 'ngx-gallery';
+import { FileUploadModule } from 'ng2-file-upload';
 
 import { AuthService } from './services/auth.service';
 import { ErrorInterceptorProvider } from './services/error.interceptor';
@@ -27,6 +28,8 @@ import { FriendListResolver } from './_resolvers/friend-list.resolver';
 import { EditProfileComponent } from './profile/edit-profile/edit-profile.component';
 import { ProfileEditResolver } from './_resolvers/profile-edit.resolver';
 import { PreventUnsavedChanges } from './_guards/prevent-unsaved-changes.guard';
+import { PhotoEditorComponent } from './profile/photo-editor/photo-editor.component';
+
 
 
 export function tokenGetter(){
@@ -46,13 +49,15 @@ export function tokenGetter(){
       FriendCardComponent,
       FriendDetailComponent,
       ListsComponent,
-      EditProfileComponent
+      EditProfileComponent,
+      PhotoEditorComponent
    ],
    imports: [
       BrowserModule,
       HttpClientModule,
       FormsModule,
       NgxGalleryModule,
+      FileUploadModule,
       TabsModule.forRoot(),
       BsDropdownModule.forRoot(),
       RouterModule.forRoot(appRoutes),

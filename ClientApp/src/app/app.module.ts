@@ -31,6 +31,7 @@ import { EditProfileComponent } from './profile/edit-profile/edit-profile.compon
 import { ProfileEditResolver } from './_resolvers/profile-edit.resolver';
 import { PreventUnsavedChanges } from './_guards/prevent-unsaved-changes.guard';
 import { PhotoEditorComponent } from './profile/photo-editor/photo-editor.component';
+import { ListsResolver } from './_resolvers/lists.resolver';
 
 
 
@@ -83,7 +84,8 @@ export function tokenGetter(){
       ErrorInterceptorProvider,
       FriendDetailResolver,
       FriendListResolver,
-      ProfileEditResolver
+      ProfileEditResolver,
+      ListsResolver
    ],
    bootstrap: [
       AppComponent
